@@ -1,0 +1,43 @@
+
+
+body{
+    align-items: center;
+    text-align: center;
+    font-family: futura;
+    background: #3399FF;
+    font-weight: bold;
+}
+h1 {
+    font-size: 96px;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    padding: 32px;
+}
+
+h3 {
+    font-weight: bold;
+    padding: 12px;
+}
+
+
+input {
+  border: 0;
+  padding: 5px;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background: red;
+  color: white;
+}
+
+button {
+    background: white;
+    color: red;
+    border: 0px;
+    padding: 22px;
+    font-size: 22px;
+}
+
+/* []

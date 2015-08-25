@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <title> Nick's GUESS! </title>
+    <!-- BOOTSTRAP - Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1> ! GUESS ! </h1>
+
+    <div class='main-box'>
+        <h3 id='status'> STATUS TO COME </h3>
+        <input type="text" placeholder="feelin' lucky, punk?">
+        <input type="submit">
+        <h3 id='guess-count'> 5 GUESSES REMAINING </h3>
+    </div>
+
+    <div class='buttons'>
+        <button type='button'id='playersGuess' onclick='playAgain()'>     PLAY AGAIN     </button>
+        <button type='button' id='playersGuess' onclick='hint()'>     HINT     </button>
+    </div>
+
+    <div id="smile-image">
+        <img src="assets/clown_mouth_w-alpha_fix.png">
+    </div>
+
+</body>
