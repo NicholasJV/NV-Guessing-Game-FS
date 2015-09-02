@@ -7,27 +7,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <h1> ! GUESS ! </h1>
 
-    <div class='main-box'>
-        <h3 id='status'> STATUS TO COME </h3>
-        <input type="text" placeholder="feelin' lucky, punk?">
-        <input type="submit">
-        <h3 id='guess-count'> 5 GUESSES REMAINING </h3>
+    <button type='start' id='start-game' onclick='gameStart()'> START <br> GAME </button>
+
+    <div id='play-box'>
+        <h3 id='status'> Go ahead, pick a  number 1-100 </h3>
+        <div id="input">
+            <input id="guess" type="text" placeholder="feelin' lucky, punk?">
+            <input id="submit" type="submit" onclick="processGuess()">
+            <h3 id="guess-history"> </h3>
+            <br> 
+        </div>
+        <h2 id='guess-count'> 5 </h2>
+        <h3> GUESSES <br> REMAINING </h3>
+
+        <div class='buttons'>
+            <button type='button' id='play-again' onclick='initialize()'> PLAY AGAIN </button>
+            <button type='button' id='hint' onclick='hint()'> HINT </button>
+        </div>
+        <h3 id="hint-text"> </h3>
     </div>
 
-    <div class='buttons'>
-        <button type='button'id='playersGuess' onclick='playAgain()'>     PLAY AGAIN     </button>
-        <button type='button' id='playersGuess' onclick='hint()'>     HINT     </button>
-    </div>
+
 
     <div id="smile-image">
         <img src="assets/clown_mouth_w-alpha_fix.png">
     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Nick's JS/jQuery code -->
+    <script src='guess.js'></script>
 
 </body>

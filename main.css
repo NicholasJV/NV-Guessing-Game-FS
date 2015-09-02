@@ -12,14 +12,23 @@ h1 {
     font-weight: bolder;
     text-align: center;
     color: red;
-    padding: 32px;
+    padding: 18px;
+}
+h2 {
+    font-size: 48px;
+    padding: 6px;
+}
+h2[id="guess-count"] {
+    color: orange;
+    font-size: 48px;
+    padding: 1px;
+    border: 0px;
 }
 
 h3 {
     font-weight: bold;
-    padding: 12px;
+    padding: 4px;
 }
-
 
 input {
   border: 0;
@@ -30,6 +39,12 @@ input {
 input[type="submit"] {
   background: red;
   color: white;
+}
+
+button[type='start'] {
+    border:80px;
+    padding: 70px;
+    font-size: 50px;
 }
 
 button {
