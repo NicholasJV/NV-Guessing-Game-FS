@@ -32,6 +32,12 @@ function gameStart(){
     $("#play-box").show();
 }
 
+$('input').keyup(function(event){
+    if(event.keyCode === 13){
+        processGuess();
+    }
+})
+
 function processGuess(){
     dupe = false;
     var submitted = ( $("#guess").val() );
@@ -109,6 +115,9 @@ function hotOrCold() {
 function createSecretNumber(){
     secretNumber = Math.floor((Math.random()*100)+1);
 }
+
+
+
 
 
 
